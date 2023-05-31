@@ -1,0 +1,509 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  overflow: hidden;
+
+}
+
+
+
+.header-section{
+    background-color: #37517E;
+    color: #fff;
+}
+/* ============ navbar logo ========= */
+
+#header-logo {
+    font-size:2rem;
+    font-weight:bold;
+    font-style:italic;
+}
+
+/* ============ nav css============== */
+.navbar a {
+    transition: 0.3s;
+    color: #fff;
+}
+.navbar a:hover{
+    color: #31a9e1;
+}
+
+.navbar .getstarted{
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  border: 2px solid #47b2e4;
+  font-weight: 600;
+}
+
+.navbar .getstarted:hover{
+  color: #fff;
+  background: #31a9e1;
+}
+
+/*=========== dropdown menu ============ */
+.dropdown-menu a{
+  color: #000;
+
+}
+/* ============== hero section css ==================== */
+.hero-section{
+  background-color: #37517E;
+  color: #fff;
+}
+
+.hero-section .btn{
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 600;
+  border:transparent;
+  transition: 0.3s;
+}
+
+.hero-section .btn:hover{
+  background-color:#31a9e1;
+}
+.heroImgDiv{
+  padding: 10px 20px;
+}
+#heroImage{
+  //height: auto;
+ // width: 620px;
+}
+
+/* hero image animation */
+@keyframes heroImg{
+  0%{
+    align-items:center;
+  }
+  100%{
+    transform:translateY(-90px);
+  }
+}
+
+#heroImage{
+  animation-name:heroImg;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease;
+  animation-direction: alternate; 
+}
+
+/* ========== client section =============== */
+
+  .client-section{
+    background-color: #F3F5FA;
+    padding: 30px 0px;
+  }
+  .client-section img{
+    height: 40px;
+    transition: .3s;
+    
+  }
+  .client-section img:hover{
+    transform: scale(1.2);
+  }
+
+  /* =========== about section css ====================== */
+  .about-section{
+    padding: 65px 0px;
+  }
+
+  .aboutSection-title h1{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .about-section p{
+  font-size:17px;
+  letter-spacing:1;
+  }
+
+  .about-section .btn{
+    border: 1px solid #31a9e1;
+    padding: 6px 32px;
+  }
+
+  .about-section .btn:hover{
+    color: #fff;
+    border: 1px solid transparent;
+  }
+
+  /* .aboutSection-title h1::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+  }
+
+  .aboutSection-title h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: 0;
+    left: calc(50% - 20px);
+  } */
+/* ========== ipsum section css =================== */
+  .ipsam-section{
+    background-color: #F3F5FA;
+    padding: 90px 0px;
+    letter-spacing: 0.1px;
+    font-size: 17px;
+  }
+  
+  .ipsam-section h1 {
+    color: #37517E;
+    
+  }
+
+  .ipsam-section .ipsam-para{
+    margin: 7px 0px;
+  }
+
+  .ipsam-section li span{
+    font-weight: 600;
+    color:#31a9e1
+  }
+
+  .ipsam-section li{
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: 10px 0 10px 15px;
+    font-weight: 600;
+    transition: .3s;
+    list-style-type: none;
+  }
+
+  .ipsam-section li:hover {
+    color:#31a9e1
+  }
+
+  .ipsam-section .collapse p{
+    //padding: 0px 0 10px 15px;
+    background-color: #fff;
+  }
+
+  /* ======== voluptam section csss ============= */
+  .voluptatem-section{
+    padding: 4rem 0px;
+  }
+  .voluptatem-section h1{
+    color: #37517E;
+  }
+  .voluptatem-section p{
+    font-style: italic;
+  }
+
+  .voluptatem-div1, .voluptatem-div2,  .voluptatem-div3, .voluptatem-div4, .voluptatem-div5, .voluptatem-div6 {
+    min-height: 11px;
+    background-color: #F3F5FA;
+    margin-bottom: 25px;
+  }
+
+  .voluptatem-sub1, .voluptatem-sub2, .voluptatem-sub3, .voluptatem-sub4, .voluptatem-sub5, .voluptatem-sub6{
+    background-color: #37517E;
+    min-height: 11px;
+  }
+
+  .voluptatem-sub2{
+    width:90%;
+  }
+
+  .voluptatem-sub3{
+    width:75%;
+  }
+
+  .voluptatem-sub4{
+    width: 55%;
+  }
+
+  .skills-item{
+    font-weight: 500;
+    opacity: .9;
+    
+  }
+
+  /* =============== service section =========== */
+
+  .service-section {
+    background-color: #F3F5FA;
+    padding: 4rem 0;
+  }
+  
+  
+  .service-section h2 {
+    color: #37517E;
+    transition: .3s;
+  }
+
+  .service-section h2:hover{
+    color: #31a9e1;
+  }
+  .main-service-box{
+    background: #fff;
+    padding:50px 30px;
+    opacity: .9;
+    transition: .3s;
+  }
+  .service-section .main-service-box:hover{
+    transform: translateY(-12px)
+  }
+
+  /* ========= call section css ============= */
+  .call-section {
+    color: #37517E;
+    color: #fff;
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("./img/cta-bg.jpg") fixed center center;
+    background-size: cover;
+    padding: 120px 0;
+  }
+
+  .call-section .btn {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  .call-section .btn:hover {
+    background: #47b2e4;
+    border: 2px solid #47b2e4;
+  }
+
+  /* ========== portfolio section css ================ */
+  .portfolio-section{
+    padding: 4rem 0;
+    
+  }
+
+  .portfolio-section h1 {
+    color: #37517E;
+  }
+
+  .img-panel {
+    position: relative;
+  }
+
+
+  /* ======= team section css======== */
+  .team-section{
+    padding: 4rem 0;
+    background-color: #F3F5FA;
+
+  }
+
+  .team-section h1 {
+    color: #37517E;
+    margin: 10px 0 10px 0;
+   
+  }
+
+  .team-section .card img {
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+  }
+
+  .cardImgOne, .cardImgTwo, .cardImgThree, .cardImgFour {
+    padding: 10px 17px;
+    transition: 0.5s;
+  }
+
+  .card{
+    transition: 0.5s;
+    margin-bottom: 15px;
+    border: transparent;
+    box-shadow: 2px 2px 0px #fff;
+  }
+  .card:hover{
+    transform: translateY(-8px);
+  }
+
+  /* ========== pricing section css ============= */
+  .pricing-section{
+    padding: 4rem 0;
+  }
+
+  .pricing-section h1 {
+    color: #37517E;
+    margin: 10px 0 10px 0;   
+  }
+
+  .pricing-card {
+    padding: 60px 40px;
+    box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+    background: #fff;
+    height: 100%;
+    border-top: 4px solid #fff;
+    border-radius: 5px;
+  }
+
+  .pricing-card .header {
+    color: #37517E;
+    font-weight: bold;
+  }
+
+  .pricing-card li{
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    list-style: square;
+    //list-position: inside;
+  }
+
+  .header div{
+    color: #31a9e1;
+    font-weight: bold;
+  }
+  
+  .pricing-card .btn {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #47b2e4;
+    color: #47b2e4;
+  }
+  
+  .pricing-card .btn:hover {
+    background: #47b2e4;
+    border: 1px transparent #47b2e4;
+    color: #fff;
+  }
+
+  /* ============ frequent section css ======== */
+  .frequent-section{
+    padding: 4rem 0;
+    background-color: #F3F5FA;
+  }
+
+  .frequent-section h1 {
+    color: #37517E;
+  }
+
+  
+  .frequent-section li span{
+    font-weight: 600;
+    color:#31a9e1
+  }
+
+  .frequent-section li{
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: 25px 0 25px 15px;
+    font-weight: 600;
+    transition: .3s;
+    list-style-type: none;
+  }
+
+  .frequent-section li:hover {
+    color:#31a9e1
+  }
+
+  .frequent-section .collapse p{
+    //padding: 0px 0 10px 15px;
+    background-color: #fff;
+  }
+
+  /* ============= contact section css ========= */
+  .contact-section {
+    padding: 4rem 0;
+  }
+
+  .contact-section h1 {
+    color: #37517E;
+  }
+
+  .contact-section p,h4{
+    color: #37517E;
+  }
+
+  .locationDiv, .formDiv{
+    padding: 60px 40px;
+    box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+    background: #fff;
+   // height: 100%;
+    border-top: 4px  solid #31a9e1;
+    border-bottom: 4px  solid #31a9e1;
+    border-radius: 5px;
+  }
+
+  /* =============== join section css ============= */
+  .join-section {
+    background-color: #F3F5FA;
+    padding: 4rem 0;
+  }
+
+  .join-section h5 {
+    color: #37517E;
+  }
+
+  .join-section .btn {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #47b2e4;
+    color: #47b2e4;
+  }
+  
+  .join-section .btn:hover {
+    background: #47b2e4;
+    border: 1px transparent #47b2e4;
+    color: #fff;
+  }
+
+  .join-section input[type="email"] {
+    border: transparent;
+    /* padding: 7px 110px; */
+    width: 360px;
+    height: 40px;
+}
+
+/* =========== footer section ============== */
+.footer-section {
+  padding: 4rem 0;
+  opacity: 0.9;
+}
+
+.footer-section h3,b {
+  color : #37517E;
+}
+
+/* ============= copyright section csss ========= */
+.copyright-section{
+  padding: 3rem 0;
+  text-align: center;
+  background-color: #37517E;
+  color: #fff;
+}
